@@ -28,6 +28,6 @@ spec:
       spec:
         containers:
           - name: web-app-container
-            image: gcr.io/consolecicd-963258/webapp-color:1e562e9
+            image: gcr.io/consolecicd-963258/webapp-color:080feb3
             ports:
               - containerPort: 8080
