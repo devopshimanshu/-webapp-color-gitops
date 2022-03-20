@@ -13,7 +13,7 @@ metadata:
     env: devlopment
   namespace: webapp-color
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: frontend
