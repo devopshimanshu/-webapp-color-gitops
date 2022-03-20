@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: web-app
+  name: webapp-color
 
 ---
 apiVersion: apps/v1
@@ -11,7 +11,7 @@ metadata:
   labels:
     app: frontend
     env: devlopment
-  namespace: web-app
+  namespace: webapp-color
 spec:
   replicas: 2
   selector:
@@ -25,7 +25,7 @@ spec:
         labels:
           app: frontend
           env: development
-        namespace: web-app
+        namespace: webapp-color
       spec:
         - name: web-app-container
           image: gcr.io/consolecicd-963258/webapp-color:1e562e9
