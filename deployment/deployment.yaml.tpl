@@ -30,7 +30,4 @@ spec:
           - name: web-app-container
             image: gcr.io/consolecicd-963258/webapp-color:SHORT_SHA
             ports:
-              - protocol: TCP
-                port: 80
-                targetPort: 8080
-            type: LoadBalancer
+              - containerPort: 8080
