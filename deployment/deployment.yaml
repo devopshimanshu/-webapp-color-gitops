@@ -19,7 +19,6 @@ spec:
       app: frontend
       env: development
   template:
-    containers:
       metadata:
         name: web-app
         labels:
@@ -27,6 +26,7 @@ spec:
           env: development
         namespace: webapp-color
       spec:
-        - name: web-app-container
-          image: gcr.io/consolecicd-963258/webapp-color:1e562e9
-          containerPort: 8080
+        containers:
+          - name: web-app-container
+            image: gcr.io/consolecicd-963258/webapp-color:1e562e9
+            containerPort: 8080
